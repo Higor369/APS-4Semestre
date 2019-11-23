@@ -133,17 +133,17 @@ namespace Aps4Semestre.Controllers
             var medio = posicaoMedio;
             var termino = posicaoTermino;
 
-            while (inicial < posicaoMedio && medio <= posicaoTermino)
+            while (inicial < posicaoMedio && medio < posicaoTermino)
             {
                 if (EMenorQue(lista[medio], lista[inicial]))
                 {
-                    novaLista.Add(lista[medio]);
-                    medio++;
+                    novaLista.Add(lista[inicial]);
+                    inicial++;
                 }
                 else
                 {
-                    novaLista.Add(lista[inicial]);
-                    inicial++;
+                    novaLista.Add(lista[medio]);
+                    medio++;
                 }
 
             }
@@ -152,7 +152,7 @@ namespace Aps4Semestre.Controllers
                 novaLista.Add(lista[inicial]);
                 inicial++;
             }
-            while(medio <= posicaoTermino)
+            while(medio < posicaoTermino)
             {
                 novaLista.Add(lista[medio]);
                 medio++;

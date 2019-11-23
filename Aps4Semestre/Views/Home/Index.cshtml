@@ -4,19 +4,16 @@
 
 
 <div id="Incluir" class="input-group">
-    digite uma palavra <input type="text"  oninput="inputarDados()" id="inputar" />
-
+    <p>Digite uma palavra: </p><input type="text" oninput="inputarDados()" id="inputar" />
     <button id="btnInputar" onclick="addATabela()" class="btn btn-secondary btn-lg" disabled>Adicionar</button>
     <button id="btnLimpar" onclick="limparImputs()" class="btn btn-secondary btn-lg">Limpar</button>
-    <br />
+    <br>
 </div>
 <div>
-    <table id="tabelaInputs" class="table">
-
-    </table>
-    <br />
-    <p>escolha o metodo de ordenação</p>
-    <div>
+    <table id="tabelaInputs" class="table"></table>
+    <br>
+    <p>Escolha o método de ordenação: </p>
+    <div class="botoesFunctions">
         <button id="btnFundicao" class="btn btn-secondary btn-lg" onclick="OrdenacaoPorFundicaoAjax()">Ordenação por fundição</button>
         <button id="btnInseraao" class="btn btn-secondary btn-lg" onclick="OrdenacaoPorInsercaoAjax()">Ordenação por inserção</button>
         <button id="btmSelcao" class="btn btn-secondary btn-lg" onclick="OrdenacaoPorSelecaoAjax()">Ordenação por seleção</button>
@@ -24,7 +21,5 @@
 </div>
 <div>
     <p>TempoDecorrido = <span id="tempoDecorrido"></span></p>
-    <table id="tabelaResultados" class="table">
-
-    </table>
+    <table id="tabelaResultados" class="table"></table>
 </div>

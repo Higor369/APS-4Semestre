@@ -1,8 +1,7 @@
-﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification\ 
-for details on configuring this project to bundle and minify static web assets. */
-body {
+﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    background-color: #E0FFFF;
 }
 
 /* Wrapping element */
@@ -34,4 +33,40 @@ body {
     .carousel-caption {
         display: none;
     }
+}
+
+input, button {
+    background-color: white;
+    border-radius: 12px;
+    font-family: "Comic Sans MS", sans-serif;
+    font-size: 20px;
+}
+
+.botoesFunctions {
+    flex-direction : row;
+    margin: 10px;
+}
+div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    font-size: 30px;
+}
+.input-group {
+
+    margin: 5px;
+}
+table{
+    border: 1px solid #000000;
+    padding: 10px;
+    text-align: center;
+    
+
+}
+td {
+    border: 1px solid #000000;
 }
